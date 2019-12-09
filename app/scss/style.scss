@@ -2,11 +2,14 @@
 @import 'global';
 @import 'fonts';
 
+// start header
+
 .header__inner {
     display: flex;
     justify-content: space-between;
     height: 90px;
     align-items: center;
+
     .header__logo {
         img {
             width: 74px;
@@ -58,15 +61,91 @@
 }
 
 .menu__list {
-    li{
+    li {
         display: inline-block;
-        & + li {
+
+        &+li {
             margin-left: 18px;
         }
 
-        a{
+        a {
             color: #fff;
             font-size: 23px;
         }
     }
 }
+
+// end header
+// start slider
+
+.slider__inner {
+    &-item {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slick-dots {
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-left: 6px;
+            margin-right: 6px;
+
+            &.slick-active {
+                button {
+                    background-color: $yellow;
+                }
+            }
+
+            button {
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                border: none;
+                font-size: 0;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+}
+
+// end slider
+// start mini-menu
+
+.mini-menu {
+    height: 120px;
+    padding-top: 14px;
+
+    .container {
+        background-color: #94c542;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mini-menu__item {
+    text-align: center;
+    align-items: center;
+
+    .item__title {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    a:hover {
+        .item__image {
+            svg {
+                fill: yellow;
+            }
+        }
+    }
+}
+
+// end mini-menu
