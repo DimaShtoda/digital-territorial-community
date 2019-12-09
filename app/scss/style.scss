@@ -83,6 +83,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        min-height: 400px;
     }
 
     .slick-dots {
@@ -130,23 +131,40 @@
     }
 }
 
+.text-svg-link {
+    .item__title {
+        color: #fff;
+    }
+
+    svg {
+        fill: #fff;
+    }
+}
+
+.text-svg-link:hover {
+    .item__title {
+        color: $yellow;
+    }
+
+    .item__image {
+        svg {
+            fill: $yellow;
+        }
+    }
+}
+
 .mini-menu__item {
     text-align: center;
     align-items: center;
 
+
     .item__title {
         font-size: 14px;
-        color: #fff;
-    }
-
-    a:hover {
-        .item__image {
-            svg {
-                fill: yellow;
-            }
-        }
     }
 }
+
+
+
 
 // end mini-menu
 // start news
