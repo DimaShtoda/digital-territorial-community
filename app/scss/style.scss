@@ -124,7 +124,7 @@
         background-color: #94c542;
     }
 
-    &__inner{
+    &__inner {
         display: flex;
         justify-content: space-between;
     }
@@ -149,3 +149,44 @@
 }
 
 // end mini-menu
+// start news
+
+.news {
+    height: 868px;
+}
+
+.news__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.news__inner-item{
+    width: 314px;
+    height: 471px;
+    margin-right: 12px;
+    margin-bottom: 25px;
+    img {
+        width: 310px;
+        height: 311px;
+    }
+    .item__title {
+        font-size: 24px;
+        font-weight: 700;
+        padding: 25px 0 15px;
+        a{
+            color: $text;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .item__text {
+        color: $text;
+        font-size: 16px;
+    }
+}
+
+// end news
