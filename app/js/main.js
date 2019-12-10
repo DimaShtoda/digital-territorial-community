@@ -2,12 +2,17 @@ $(function () {
 
 
     $('.slider__inner').slick({
-        dots: true,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
     });
+
+    $('.slider-menu__inner').slick({
+        arrows: true,
+        slidesToShow: 5,
+        slidesToScroll: 1
+    })
 
 })

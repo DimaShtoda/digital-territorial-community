@@ -22,6 +22,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "magnific-popup": "^1.1.0"
   }
 }
