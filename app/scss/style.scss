@@ -18,6 +18,13 @@
     }
 }
 
+.header__title {
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+}
+
 .header__search {
     max-width: 350px;
     height: 35px;
@@ -61,14 +68,61 @@
         display: inline-block;
 
         &+li {
-            margin-left: 18px;
+            margin-left: 9px;
+            margin-right: 9px;
         }
 
         a {
             color: #fff;
             font-size: 23px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
+}
+
+.header__drop-down {
+    position: relative;
+}
+
+.drop-down__list {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    background-color: #019401;
+    
+
+    li {
+
+        &+li {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        a {
+            color: #c9f3d0;
+            font-size: 14px;
+            padding: 8px 11px;
+        }
+
+        a:hover {
+            color: $yellow;
+        }
+    }
+}
+
+.header__drop-down>a {
+    border-bottom: 5px solid transparent;
+}
+
+.header__drop-down.drop-down:hover .drop-down__list {
+    display: block;
+}
+
+.header__drop-down.drop-down:hover>a {
+    background-color: #019401;
+    border-bottom: 5px solid $yellow;
 }
 
 // end header
@@ -169,8 +223,10 @@
 // start mini-menu
 
 .mini-menu {
-    height: 120px;
-    padding-top: 14px;
+    min-height: 70px;
+    margin-top: 14px;
+    background-color: $green;
+    height: 100%;
 
     .container {
         background-color: $green;
@@ -222,6 +278,7 @@
 
 .news {
     height: 1100px;
+    padding-top: 14px;
 }
 
 .news__inner {
@@ -319,7 +376,7 @@
 .gov__links {
     background-color: $green;
     min-height: 122px;
-    margin: 15px 0 15px;
+    margin: 14px 0 14px;
 
     .wrapper {
         display: flex;
@@ -331,6 +388,7 @@
         align-items: center;
         padding-top: 30px;
         padding-bottom: 20px;
+        border-bottom: 2px solid transparent;
     }
 
     &-item:hover {
@@ -359,11 +417,11 @@
 // start poll
 
 .poll {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 
     &__inner {
         min-height: 175px;
-        width: 1140px;
+        min-width: 1140px;
         background-color: #32CD32;
         display: flex;
         align-items: center;
@@ -386,11 +444,22 @@
 }
 
 // end poll
+// start econom__growth
+
+.econom__growth {
+    padding-bottom: 14px;
+
+    img {
+        width: 100%;
+    }
+}
+
+//end econom__growth
 // start petition
 
 .petition__inner {
     border-left: 3px solid $yellow;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 
     &-title {
         font-size: 24px;
@@ -503,7 +572,7 @@
     padding: 20px 20px 0;
     min-height: 500px;
     background-color: #fff;
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
 
     button {
         background-image: url(../images/fbshare.png);
@@ -531,7 +600,7 @@
         margin-left: auto;
         margin-right: auto;
         color: #454a48;
-        max-width: 650px;        
+        max-width: 650px;
     }
 }
 
@@ -545,3 +614,12 @@
 }
 
 // end koda-news
+// start under-construction
+
+.page {
+    img {
+        padding: 60px 0 60px 216px;
+    }
+}
+
+// end under-construction
